@@ -1,3 +1,5 @@
+# Enable exit on error - script will stop if any command fails
+set -e
 cd $GITHUB_WORKSPACE
 yum install gcc gcc-c++ libgfortran git patch wget lapack-static unzip zip make glibc-static -y
 rm -f /usr/lib64/liblapack.s*
